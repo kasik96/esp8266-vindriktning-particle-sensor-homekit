@@ -4,11 +4,11 @@
 <div align="center"><img src="./img/qrcode.svg" alt="pair_code" width="100"/></div>
 
 ESP8266 firmware, for IKEA VINDRIKTNING PM2.5 Air Quality sensor.
-The modification doesn't interfere with normal operation of the device in any way.
+The modification doesn't interfere with the normal operation of the device in any way.
 The ESP8266 just adds another data sink beside the colored LEDs.
 
-This Firmware is Frenkestein Monster between MQTT ESP8266 IKEA VINDRIKTNING Firmware from Hypfer and ESP8266 HomeKit implementation from Mixiaoxiao. 
-Its my first project in C for ESP8266, so dont expect any warranties. But it works on mine device. 
+This Firmware is Frankenstein Monster between MQTT ESP8266 IKEA VINDRIKTNING Firmware from Hypfer and ESP8266 HomeKit implementation from Mixiaoxiao. 
+It's my first project in C for ESP8266, so don't expect any warranties. But it works on my device. 
 I am not liable for any damage to your devices. If you use this firmware, it's your own risk.
 
 ![welcome_picture](./img/IMG_0499.jpg)
@@ -23,7 +23,7 @@ To extend your air quality sensor, you will need
 - A long PH0 Screwdriver (e.g. Wera 118022)
 
 Fortunately, there is a lot of unused space in the enclosure, which is perfect for our ESP8266.
-Also, everything we need is accessible via easy to solder testpoints.
+Also, everything we need is accessible via easy to solder test points.
 
 ## Hardware
 
@@ -35,10 +35,10 @@ of accidentally melting some plastic.
 
 ![board](./img/IMG_0502.jpg)
 
-As you can see in this image, you'll need to solder wires to GND, 5V and the Testpoint that is connected to TX of the
+As you can see in this image, you'll need to solder wires to GND, 5V, and the Testpoint that is connected to TX of the
 Particle Sensor.
 
-Then just connect these Wires to GND, VIN (5V) and D2 (if you're using a Wemos D1 Mini).
+Then just connect these Wires to GND, VIN (5V), and D2 (if you're using a Wemos D1 Mini).
 
 Done.
 
@@ -51,9 +51,16 @@ For this, you will need to add ESP8266 support to it by [using the Boards Manage
 1. Go to this GitHub repo and download it as ZIP - https://github.com/Mixiaoxiao/Arduino-HomeKit-ESP8266
 2. In Arduino IDE select "Sketch" -> "Include Library" and "Add .ZIP Library..." and select downloaded ZIP
 3. Download and open this repository in Arduino IDE
-4. Open wifi_info.ha and replace ssid and password with yours
+4. Open wifi_info.ha and replace SSID and password with yours
 5. Set the ESP8266 CPU to run at 160MHz
 3. Build, flash, and you're done.
+
+
+## ToDo
+
+- Easier WiFi pairing process
+- Reset function for WiFi
+- OTA Updates
 
 ## References and sources
 
