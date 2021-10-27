@@ -1,5 +1,8 @@
 <p align="center"><h2>Apple HomeKit for IKEA VINDRIKTNING PM2.5 Air Quality sensor</h2></p>
 
+
+<div align="center"><img src="./img/qrcode.svg" alt="pair_code" width="100"/></div>
+
 ESP8266 firmware, for IKEA VINDRIKTNING PM2.5 Air Quality sensor.
 The modification doesn't interfere with normal operation of the device in any way.
 The ESP8266 just adds another data sink beside the colored LEDs.
