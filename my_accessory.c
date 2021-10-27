@@ -9,12 +9,12 @@ homekit_characteristic_t cha_pm25_density = HOMEKIT_CHARACTERISTIC_(PM25_DENSITY
 
 homekit_characteristic_t cha_air_quality = HOMEKIT_CHARACTERISTIC_(AIR_QUALITY, 0);
 
-homekit_characteristic_t cha_name = HOMEKIT_CHARACTERISTIC_(NAME, "Air Quality Sensor");
+homekit_characteristic_t cha_name = HOMEKIT_CHARACTERISTIC_(NAME, "Air Quality Sensor - VINDRIKTNING");
 
 homekit_accessory_t *accessories[] = {
     HOMEKIT_ACCESSORY(.id=1, .category=homekit_accessory_category_sensor, .services=(homekit_service_t*[]) {
         HOMEKIT_SERVICE(ACCESSORY_INFORMATION, .characteristics=(homekit_characteristic_t*[]) {
-            HOMEKIT_CHARACTERISTIC(NAME, "Air Quality Sensor"),
+            HOMEKIT_CHARACTERISTIC(NAME, "Air Quality Sensor - VINDRIKTNING"),
             HOMEKIT_CHARACTERISTIC(MANUFACTURER, "VINDRIKTNING - Arduino HomeKit"),
             HOMEKIT_CHARACTERISTIC(SERIAL_NUMBER, "0123456"),
             HOMEKIT_CHARACTERISTIC(MODEL, "ESP8266/ESP32"),

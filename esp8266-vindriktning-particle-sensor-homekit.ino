@@ -59,7 +59,7 @@ void my_homekit_loop() {
 
 void my_homekit_report() {
   cha_pm25_density.value.float_value = state.avgPM25;
-  float air_quality_val = 0;
+  int air_quality_val = 0;
   if (state.avgPM25 >= 150){
           air_quality_val = 5;
   } else if (state.avgPM25 >= 55){
@@ -71,7 +71,7 @@ void my_homekit_report() {
   } else if (state.avgPM25 >= 0){
           air_quality_val = 1;
   }
-  cha_air_quality.value.float_value = air_quality_val;
+  cha_air_quality.value.int_value = air_quality_val;
   homekit_characteristic_notify(&cha_pm25_density, cha_pm25_density.value);
   homekit_characteristic_notify(&cha_air_quality, cha_air_quality.value);
 }
