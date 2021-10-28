@@ -15,12 +15,10 @@ I am not liable for any damage to your devices. If you use this firmware, it's y
 
 ## Prerequisites
 
-To extend your air quality sensor, you will need
-
 - An ESP8266 with a 5v voltage regulator (e.g. a Wemos D1 Mini)
-- Some short dupont cables
+- Some short cables
 - A soldering iron
-- A long PH0 Screwdriver (e.g. Wera 118022)
+- A long PH0 Screwdriver
 
 Fortunately, there is a lot of unused space in the enclosure, which is perfect for our ESP8266.
 Also, everything we need is accessible via easy to solder test points.
