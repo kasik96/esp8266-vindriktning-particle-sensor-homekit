@@ -63,7 +63,9 @@ For this, you will need to add ESP8266 support to it by [using the Boards Manage
 ## ToDo
 
 ✅ <strike>Easier WiFi pairing process</strike>
+
 ✅ <strike>Reset function for WiFi</strike>
+
 ✅ <strike>OTA Updates</strike>
 
 ## References and sources
