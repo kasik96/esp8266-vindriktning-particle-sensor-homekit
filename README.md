@@ -49,16 +49,22 @@ For this, you will need to add ESP8266 support to it by [using the Boards Manage
 1. Go to this GitHub repo and download it as ZIP - https://github.com/Mixiaoxiao/Arduino-HomeKit-ESP8266
 2. In Arduino IDE select "Sketch" -> "Include Library" and "Add .ZIP Library..." and select downloaded ZIP
 3. Download and open this repository in Arduino IDE
-4. Open wifi_info.ha and replace SSID and password with yours
 5. Set the ESP8266 CPU to run at 160MHz
 3. Build, flash, and you're done.
 
+## Connect to HomeKit
+
+1. Plug your Air Quality sensor to power (ESP8266 is powered through VINDRIKTNING)
+2. Go to WiFi Settings on your iPhone/iPad and connect to "VINDRIKTNING" WiFi
+3. Page is opened automatically where you select your Home network and make a connection
+4. Go to your Home app and select "Add Accessory"
+5. Now Scan code on top of this webpage, alternatively select "More Options" and you should see your Air Quality Sensor there (Password is 111-11-111).
 
 ## ToDo
 
-- Easier WiFi pairing process
-- Reset function for WiFi
-- OTA Updates
+✅ <strike>Easier WiFi pairing process</strike>
+✅ <strike>Reset function for WiFi</strike>
+✅ <strike>OTA Updates</strike>
 
 ## References and sources
 
