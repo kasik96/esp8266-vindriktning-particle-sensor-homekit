@@ -4,6 +4,7 @@
 <div align="center"><img src="./img/qrcode.svg" alt="pair_code" width="100"/></div>
 
 ESP8266 firmware, for IKEA VINDRIKTNING PM2.5 Air Quality sensor.
+
 The modification doesn't interfere with the normal operation of the device in any way.
 The ESP8266 just adds another data sink beside the colored LEDs.
 
@@ -26,10 +27,6 @@ Also, everything we need is accessible via easy to solder test points.
 ## Hardware
 
 To install the ESP8266, you need to unscrew the four visible screws in the back of the enclosure.
-
-Then, there are also three screws holding the tiny PCB in place. These aren't necessary to remove since you can solder
-in-place, however personally, I'd recommend taking the board out of there since it will be easier to solder without fear
-of accidentally melting some plastic.
 
 ![board](./img/IMG_0502.jpg)
 
