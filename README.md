@@ -43,6 +43,11 @@ The firmware can be built and flashed using the Arduino IDE.
 
 For this, you will need to add ESP8266 support to it by [using the Boards Manager](https://github.com/esp8266/Arduino#installing-with-boards-manager).
 
+Furthermore, you will also need to install the following libraries using the Library Manager:
+
+* ArduinoOTA 1.0.3
+* WiFiManager 0.15.0
+
 1. Go to this GitHub repo and download it as ZIP - https://github.com/Mixiaoxiao/Arduino-HomeKit-ESP8266
 2. In Arduino IDE select "Sketch" -> "Include Library" and "Add .ZIP Library..." and select downloaded ZIP
 3. Download and open this repository in Arduino IDE
