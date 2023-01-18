@@ -114,15 +114,15 @@ void resetWifiSettingsAndReboot() {
 void my_homekit_report() {
   cha_pm25_density.value.float_value = state.avgPM25;
   int air_quality_val = 0;
-  if (state.avgPM25 >= 250){
+  if (state.avgPM25 >= 150){
           air_quality_val = 5;
-  } else if (state.avgPM25 >= 150){
-          air_quality_val = 4;
   } else if (state.avgPM25 >= 55){
-          air_quality_val = 3;
+          air_quality_val = 4;
   } else if (state.avgPM25 >= 35){
+          air_quality_val = 3;
+  } else if (state.avgPM25 >= 13){
           air_quality_val = 2;
-  } else if (state.avgPM25 >= 12){
+  } else if (state.avgPM25 <= 12){
           air_quality_val = 1;
   }
   cha_air_quality.value.int_value = air_quality_val;
